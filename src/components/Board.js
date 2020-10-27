@@ -11,7 +11,7 @@ export default function Board() {
       return;
     }
     const newSquares = squares.slice();
-    newSquares[index] = xIsNext ? "X" : "O";
+    newSquares[index] = xIsNext ? "👻" : "🎃";
     setSquares(newSquares);
     setXIsNext(!xIsNext);
   }
@@ -27,7 +27,7 @@ export default function Board() {
   if (winner) {
     status = "Winner: " + winner;
   } else {
-    status = "Next player: " + (xIsNext ? "X" : "O");
+    status = "Next player: " + (xIsNext ? "👻" : "🎃");
   }
 
   return (
